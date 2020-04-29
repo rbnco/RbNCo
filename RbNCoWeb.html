@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>
+		RbNCo
+    	</title>
+	
+	<meta charset="utf-8">
+	
+	<style>
+		.centrado-porcentual 
+		{
+    			position: absolute;
+    			left: 50%;
+    			top: 50%;
+   		 	transform: translate(-50%, -50%);
+    			-webkit-transform: translate(-50%, -50%);
+		}
+	</style>
+	
+	<script>
+   		document.onkeydown = capturekey;
+    		document.onkeypress = capturekey;
+    		document.onkeyup = capturekey;
+
+    		function capturekey(e) 
+		{
+        		e = e || window.event;
+        		//debugger
+        		if (e.code == 'F5') 
+			{
+            			if (confirm('POR EL CULO TE LA HINCO')) 
+				{
+                			//allow to refresh
+            			} 
+            			else 
+				{
+                			//avoid from refresh
+                			e.preventDefault()
+                			e.stopPropagation()
+            			}
+        		}
+   		 }
+	</script>
+</head>
+
+
+<body style="background-color:rgb(255,192,203);">
+
+	<div class="centrado-porcentual">
+  		<h2>
+			<FONT SIZE="+5" COLOR="DEEPPINK"  FACE="Verdana"> PULSA F5</FONT>
+		</h2>
+	</div>
+</body>
+
+</html>
